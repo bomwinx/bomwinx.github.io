@@ -1,32 +1,12 @@
-home_phrase1: Focus and leadership are the keys to success
-home_phrase2: I'm Fausto De La Torre, a technology & business leader who helps organizations across the globe to achieve their missions.
-home_phrase3: Here you can find my experiences and insights about strategy, leadership and technology.
-explore_posts: Explore the most recent posts
-view_more_posts: View more posts
-learn_more: Learn more
-all: All
-tags: Tags
-share: Share on
-about_me: About me
-all_posts: All posts
-message_404: Sorry, It appears that the page you were looking for doesn't exist or might have been moved.
-home: Home
-technology_strategy: Technology Strategy
-enterprise_architecture: Enterprise Architecture
-public_speaking: Public Speaking
-leadership_mentoring: Leadership and Mentoring
-consulting: Consulting
-software_development: Software Development
-high_performing_teams: High Performing Teams
-lean_agile: Lean & Agile
-
-job_title: Technology director
-bio: "Technology Director for Thoughtworks Ecuador and a member of the Global
-Technology Advisory Board. Co-responsible for the long-term success and growth
-of ThoughtWorks Ecuador, designing and executing the technology strategy.<br /><br />
-I help large organizations to connect business and IT strategies in their digital
-transformation and innovation journey through IT consulting and custom software
-delivery.<br /><br />
-Large experience mentoring and leading technical leaders and multidisciplinary
-teams to provide sustainable solutions by building new digital products and
-modernizing legacy systems."
+contact: Contact
+all_rights_reserved: 2021 All Rights Reserved
+home_title: The coolest band
+we_are_bomwinx: We're BomWinx
+get_in_touch: Get In Touch
+phone: Phone
+name: Name
+subject: Subject
+message: Message
+send_message: Send Message
+message_sent: Thank you! Your Message has been sent.
+message_sent_error: Something went wrong, Please try again!

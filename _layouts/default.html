@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
         <meta name="keywords" content="">
-		<title>Fausto De La Torre - {{ page.title }}</title>
+		<title>BomWinx - {{ page.title }}</title>
 		<!-- Favicon -->
         <link href="/assets/images/favicon.png" rel="shortcut icon">
 		<!-- CSS -->
@@ -23,9 +23,16 @@
     {% seo %}
 	</head>
 	<body data-preloader="1">
+		
 		{% include navigation.html %}
-    	{{ content }}
+		{{ content }}
 		{% include footer.html %}
+
+		<!-- Scroll to top button -->
+		<div class="scrolltotop">
+			<a class="button-circle button-circle-sm button-circle-dark" href="#"><i class="ti-arrow-up"></i></a>
+		</div>
+		<!-- end Scroll to top button -->
 
     	<!-- ***** JAVASCRIPTS ***** -->
 		<script src="/assets/plugins/jquery.min.js"></script>

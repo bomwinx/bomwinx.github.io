@@ -1,0 +1,43 @@
+{% include set_language.html %}
+{% assign genres = site.songs | map: 'genres' | join: ' ' | split: ' ' | uniq %}
+
+<!-- Song section -->
+<div id="songs" class="section">
+    <div class="container">
+        <!-- Song filter -->
+        <div class="filter filter-style-3 text-center">
+            <ul>
+                <li data-filter="*">All</li>
+                {% for genre in genres %}
+                    <li data-filter=".{{ genre }}">{{ genre }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- end Portfolio filter -->
+        <div class="row portfolio-wrapper spacing-10 hover-style-3">
+            
+            {% for song in site.songs %}
+                <!-- Song box 1 -->
+                <div class="col-12 col-md-6 col-lg-4 portfolio-item {{ song.genres }}">
+                    <div class="portfolio-box">
+                        <div class="portfolio-img">
+                            <!-- Image source -->
+                            <img src="{{ song.img }}" alt="">
+                        </div>
+                        <a href="{{ song.video }}" target="_blank"></a><!-- Song Single link -->
+                        <div class="portfolio-title">
+                            <div>
+                                <h6 class="font-weight-normal">{{ song.title }}</h6>
+                                <span>{{ song.author }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div><!-- end row/portfolio-wrapper-->
+    </div><!-- end container -->
+</div>
+<!-- end Song section -->
+
+
+

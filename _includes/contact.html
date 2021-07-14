@@ -1,0 +1,46 @@
+{% include set_language.html %}
+<!-- Contact section -->
+<div id="contact" class="section">
+    <div class="container">
+        <div class="margin-bottom-70">
+            <div class="row text-center">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <h2 class="font-weight-normal">{{ data.labels.get_in_touch }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="margin-bottom-30">
+                    <h6 class="font-weight-normal margin-0">{{ data.labels.phone }}:</h6>
+                    <p>+(593) 996 558 564</p>
+                </div>
+                <div class="margin-bottom-30">
+                    <h6 class="font-weight-normal margin-0">Email:</h6>
+                    <p>bomwinx@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 text-md-right">
+                <form method="post" id="contactform">
+                    <div class="form-row">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" id="name" name="name" placeholder="{{ data.labels.name }}" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                        </div>
+                    </div>
+                    <input type="text" id="subject" name="subject" placeholder="{{ data.labels.subject }}" required>
+                    <textarea name="message" id="message" placeholder="{{ data.labels.message }}"></textarea>
+                    <button class="button button-lg button-outline-dark-2" type="submit">{{ data.labels.send_message }}</button>
+                </form>
+                <!-- Submit result -->
+                <div class="submit-result">
+                    <span id="success">{{ data.labels.message_sent }}</span>
+                    <span id="error">{{ data.labels.message_sent_error }}</span>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>
+<!-- end Contact section -->

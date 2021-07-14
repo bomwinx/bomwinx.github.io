@@ -1,13 +1,13 @@
 collections:
-  authors:
+  songs:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "songs"
     values:
-      layout: "author"
+      layout: "song"
   - scope:
       path: ""
       type: "posts"
