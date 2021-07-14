@@ -1,0 +1,36 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
+  - scope:
+      path: ""
+    values:
+      lang: "es"
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - "z_mono"

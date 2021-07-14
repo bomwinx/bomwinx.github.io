@@ -1,0 +1,18 @@
+- name: Strategy
+  link: /en/strategy.html
+- name: Leadership
+  link: /en/leadership.html
+- name: Technology
+  link: /en/technology.html
+- name: More Categories
+  items: 
+    - name: Tech Leadership
+      link: /en/
+    - name: Team Management
+      items:
+        - name: People
+          link: /en/
+        - name: Tools
+          link: /en/
+- name: About me
+  link: /en/about.html

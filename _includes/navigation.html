@@ -1,0 +1,76 @@
+{% include set_language.html %}
+<!-- Header -->
+<div class="header right sticky-autohide">
+  <div class="container">
+      <!-- Logo -->
+      <div class="header-logo">
+          <h3>
+            <a href="/{% if page.lang %}{{ page.lang }}{% endif %}">
+              <img src="/assets/images/logos/logo2_b.png" />
+            </a>
+          </h3>
+          <!-- 
+            <img class="logo-light" src="../assets/images/your-logo-light.png" alt=""> 
+            <img class="logo-dark" src="../assets/images/your-logo-dark.png" alt="">
+          -->
+      </div>
+      <!-- Menu -->
+      <div class="header-menu">
+          <ul class="nav">
+            {% for item in data.navigation %}
+              <li class="nav-item">
+                <a class="nav-link {% if page.url == item.link %}current{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+                {% if item.items %}
+                  <ul class="nav-dropdown">
+                    {% for subItem in item.items %}
+                      <li class="nav-dropdown-item">
+                        <a class="nav-dropdown-link" href="{{ subItem.link }}">{{ subItem.name }}</a>
+                        {% if subItem.items %}
+                          <ul class="nav-subdropdown">
+                            {% for subSubItem in subItem.items %}
+                              <li class="nav-subdropdown-item">
+                                <a class="nav-subdropdown-link" href="{{ subSubItem.link }}">{{ subSubItem.name }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+            <li class="nav-item">
+              <a class="nav-link">
+                {% if page.lang == 'es' %}<img style="width: 20px;" src="/assets/images/flag_ec.svg"/> ES{% endif %}
+                {% if page.lang == 'en' %}<img style="width: 20px;" src="/assets/images/flag_gb.svg"/> EN{% endif %}
+              </a>
+              <ul class="nav-dropdown">
+                {% assign current_lang_url = '/' | append: page.lang | append: '/' %}
+                <li class="nav-dropdown-item">
+                  <a class="nav-dropdown-link" href="{{ page.url | replace: current_lang_url, '/es/' }}">
+                    <img style="width: 20px;" src="/assets/images/flag_ec.svg"/> Español
+                  </a>
+                </li>
+                <li class="nav-dropdown-item">
+                  <a class="nav-dropdown-link" href="{{ page.url | replace: current_lang_url, '/en/' }}">
+                    <img style="width: 20px;" src="/assets/images/flag_gb.svg"/> English
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+      <!-- Menu Extra -->
+      <div class="header-menu-extra">
+          <ul class="list-inline">
+            <li><a href="https://www.linkedin.com/in/faustodelatorre/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+      <!-- Menu Toggle -->
+      <button class="header-toggle">
+          <span></span>
+      </button>
+  </div><!-- end container -->
+</div>
+<!-- end Header -->
