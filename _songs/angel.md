@@ -2,7 +2,7 @@
 name: angel
 title: Angel
 author: BomWinx
-genres: rock pop
+genres: rock pop english
 video: https://youtu.be/0RI5T6iFhfM
 img: /assets/images/banner_bom_winxs_opt.jpg
 ---
